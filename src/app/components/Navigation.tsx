@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router';
 import { Menu, X, Download } from 'lucide-react';
-import clearledgerlogo from './assets/clearledgerlogo.PNG';
+import clearledgerlogo from './assets/clearledgerlogo.png';
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
