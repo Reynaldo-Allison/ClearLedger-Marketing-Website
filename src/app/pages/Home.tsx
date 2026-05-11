@@ -31,7 +31,7 @@ export function Home() {
               className="bg-[#00D9C0] text-white px-8 py-3 rounded-lg hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
             >
               <Download className="w-5 h-5" />
-              Download for Android
+              Download for Android (APK)
             </a>
             <button className="border border-white/20 px-8 py-3 rounded-lg hover:bg-white/5 transition-colors text-white opacity-60 cursor-not-allowed" disabled>
               Windows Coming Soon
