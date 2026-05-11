@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import clearledgerlogo from './assets/clearledgerlogo.PNG';
+import clearledgerlogo from './assets/clearledgerlogo.png';
 
 export function Footer() {
   return (
