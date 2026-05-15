@@ -1,0 +1,355 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.028) 1px, transparent 1px),
+    linear-gradient(135deg, #06111d 0%, #081826 46%, #07121f 100%);
+  background-size: 72px 72px, 72px 72px, auto;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(127, 220, 194, 0.35);
+  color: #ffffff;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.bg-page-glow {
+  background:
+    linear-gradient(120deg, rgba(127, 220, 194, 0.16), transparent 30%),
+    linear-gradient(235deg, rgba(127, 220, 194, 0.08), transparent 38%),
+    linear-gradient(180deg, rgba(8, 24, 38, 0.94), rgba(5, 14, 24, 0.98));
+}
+
+.app-shape {
+  clip-path: polygon(0 0, 100% 12%, 78% 100%, 16% 82%);
+}
+
+.animate-rise {
+  animation: rise-in 720ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-rise-delay-1 {
+  animation: rise-in 720ms cubic-bezier(0.16, 1, 0.3, 1) 110ms both;
+}
+
+.animate-rise-delay-2 {
+  animation: rise-in 720ms cubic-bezier(0.16, 1, 0.3, 1) 220ms both;
+}
+
+.animate-rise-delay-3 {
+  animation: rise-in 720ms cubic-bezier(0.16, 1, 0.3, 1) 330ms both;
+}
+
+.animate-float-soft {
+  animation: float-soft 5.8s ease-in-out infinite;
+}
+
+.animate-float-soft-delay {
+  animation: float-soft 6.4s ease-in-out 800ms infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2.8s ease-in-out infinite;
+}
+
+.animate-chart-draw {
+  stroke-dasharray: 420;
+  stroke-dashoffset: 420;
+  animation: chart-draw 1.3s cubic-bezier(0.16, 1, 0.3, 1) 420ms forwards;
+}
+
+.animate-card-hover {
+  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.animate-card-hover:hover {
+  transform: translateY(-6px);
+  border-color: rgba(127, 220, 194, 0.34);
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.22);
+}
+
+.feature-float-scene {
+  min-height: clamp(455px, 42vw, 505px);
+  overflow: visible;
+  position: relative;
+  isolation: isolate;
+}
+
+.feature-float-scene::before,
+.feature-float-scene::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.feature-float-scene::before {
+  inset: 2% 12%;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 44% 48%, rgba(127, 220, 194, 0.2), transparent 22%),
+    radial-gradient(ellipse at 50% 50%, rgba(127, 220, 194, 0.1), transparent 68%);
+  opacity: 0.8;
+  transform: rotate(-8deg);
+  z-index: -2;
+}
+
+.feature-float-scene::after {
+  inset: 16% 20%;
+  border: 1px solid rgba(127, 220, 194, 0.12);
+  border-radius: 999px;
+  box-shadow: 0 0 48px rgba(127, 220, 194, 0.08);
+  transform: rotate(-9deg);
+  z-index: -1;
+}
+
+.feature-float-core {
+  align-items: center;
+  animation: feature-core-pulse 5s ease-in-out infinite;
+  background:
+    radial-gradient(circle, rgba(127, 220, 194, 0.18), transparent 64%),
+    rgba(7, 21, 33, 0.52);
+  border: 1px solid rgba(127, 220, 194, 0.18);
+  border-radius: 999px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.3);
+  display: flex;
+  height: 190px;
+  justify-content: center;
+  left: calc(50% - 95px);
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: calc(50% - 95px);
+  width: 190px;
+  z-index: 0;
+}
+
+.feature-float-card {
+  animation: feature-float 7.5s ease-in-out infinite;
+  position: absolute;
+  width: clamp(218px, 20vw, 265px);
+  z-index: 2;
+}
+
+.feature-float-card-inner {
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.07), transparent 36%),
+    rgba(10, 32, 48, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 16px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.34);
+  min-height: 205px;
+  opacity: 0.78;
+  padding: 16px;
+  transition: transform 260ms ease, opacity 260ms ease, filter 260ms ease, border-color 260ms ease, box-shadow 260ms ease;
+}
+
+.feature-float-card:hover {
+  z-index: 5;
+}
+
+.feature-float-card:hover .feature-float-card-inner {
+  border-color: rgba(127, 220, 194, 0.34);
+  box-shadow: 0 30px 82px rgba(0, 0, 0, 0.42), 0 0 32px rgba(127, 220, 194, 0.1);
+  filter: saturate(1.16);
+  opacity: 1;
+  transform: translateY(-12px) scale(1.035);
+}
+
+.feature-float-card--ocr {
+  left: 4%;
+  top: 6%;
+}
+
+.feature-float-card--accounts {
+  right: 4%;
+  top: 5%;
+  width: clamp(238px, 24vw, 300px);
+}
+
+.feature-float-card--budgets {
+  bottom: 1%;
+  left: 25%;
+}
+
+.feature-float-card--ai {
+  bottom: 2%;
+  right: 25%;
+}
+
+.feature-float-card--exports {
+  left: calc(50% - 120px);
+  top: 0;
+  width: clamp(220px, 21vw, 260px);
+}
+
+.feature-mini-icon {
+  align-items: center;
+  background: rgba(127, 220, 194, 0.12);
+  border: 1px solid rgba(127, 220, 194, 0.28);
+  border-radius: 12px;
+  color: #7fdcc2;
+  display: flex;
+  height: 36px;
+  justify-content: center;
+  width: 36px;
+}
+
+.feature-mini-receipt {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.09), transparent),
+    rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  overflow: hidden;
+  padding: 18px;
+  position: relative;
+}
+
+.feature-float-scan-line {
+  animation: feature-scan 2.4s ease-in-out infinite;
+  background: linear-gradient(90deg, transparent, rgba(127, 220, 194, 0.84), transparent);
+  height: 2px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 22%;
+}
+
+.feature-mini-export-row {
+  align-items: center;
+  display: flex;
+  gap: 14px;
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-soft {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes pulse-soft {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(127, 220, 194, 0.24);
+  }
+
+  50% {
+    box-shadow: 0 0 0 10px rgba(127, 220, 194, 0);
+  }
+}
+
+@keyframes chart-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes feature-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-16px);
+  }
+}
+
+@keyframes feature-core-pulse {
+  0%, 100% {
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.3);
+  }
+
+  50% {
+    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.38), 0 0 42px rgba(127, 220, 194, 0.1);
+  }
+}
+
+@keyframes feature-scan {
+  0%, 100% {
+    opacity: 0.25;
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(68px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-rise,
+  .animate-rise-delay-1,
+  .animate-rise-delay-2,
+  .animate-rise-delay-3,
+  .animate-float-soft,
+  .animate-float-soft-delay,
+  .animate-pulse-soft,
+  .animate-chart-draw,
+  .feature-float-card,
+  .feature-float-core,
+  .feature-float-scan-line {
+    animation: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .feature-float-scene {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    min-height: 0;
+  }
+
+  .feature-float-core,
+  .feature-float-card {
+    bottom: auto;
+    left: auto;
+    position: relative;
+    right: auto;
+    top: auto;
+    width: auto;
+  }
+
+  .feature-float-core {
+    grid-column: 1 / -1;
+  }
+
+  .feature-float-card-inner {
+    height: 100%;
+    min-height: 245px;
+  }
+}
+
+@media (max-width: 640px) {
+  .feature-float-scene {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-float-card-inner {
+    min-height: auto;
+  }
+}
