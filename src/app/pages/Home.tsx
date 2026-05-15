@@ -28,7 +28,7 @@ export function Home() {
             </h1>
 
             <p className="animate-rise-delay-2 mt-6 max-w-2xl text-lg leading-8 text-white/68 md:text-xl">
-              Money movement, neatly tracked. Scan receipts with OCR, let AI classify your transactions, and manage all your accounts in one unified ledger.
+             Money movement, neatly tracked. Scan receipts with OCR, let AI classify your transactions, and manage all your accounts in one unified ledger — built for Jamaica and the Caribbean.
             </p>
 
             <div className="animate-rise-delay-3 mt-8 flex flex-col gap-3 sm:flex-row">
