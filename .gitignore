@@ -1,0 +1,9 @@
+node_modules/
+.npm-cache/
+dist/
+.env
+.env.local
+public/app-screenshots/receipt-capture.jpeg
+public/app-screenshots/dashboard.jpeg
+public/app-screenshots/expense-form.jpeg
+public/app-screenshots/line-items.jpeg

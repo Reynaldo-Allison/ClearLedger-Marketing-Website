@@ -4,7 +4,7 @@ import { Footer } from "./Footer";
 
 export function RootLayout() {
   return (
-    <div className="min-h-screen bg-[#0A0F0D] text-white">
+    <div className="min-h-screen overflow-hidden bg-[#06111d] text-white">
       <Navigation />
       <Outlet />
       <Footer />
