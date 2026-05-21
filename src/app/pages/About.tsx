@@ -92,7 +92,10 @@ export function About() {
             Built by a Passionate Team
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/64">
-            We're a small team of developers, designers, and financial enthusiasts dedicated to building tools that make personal finance accessible to everyone.
+            ClearLedger was developed by a team of creative and technically driven students from The University of the West Indies (UWI) with a shared goal of solving one of the Caribbean’s most overlooked challenges namely personal financial management in a cash-first economy. Our capstone team combines skills in software engineering, mobile application development, database architecture, cloud systems, and artificial intelligence integration. From designing the system architecture to implementing secure backend services, AI-powered receipt parsing, and intuitive mobile experiences, the team worked collaboratively to transform an academic project into a practical financial technology solution built specifically for Jamaica and the wider Caribbean. 
+            The development of ClearLedger was guided by continuous research into the needs of budget-conscious users — individuals and families looking for a simpler, smarter way to track spending, manage accounts, and improve financial decision-making. Every feature, from receipt scanning and automated categorization to budgeting tools and AI-generated financial insights, was designed with accessibility, usability, and real-world practicality in mind. 
+            The project was developed under the supervision of Dr. Ricardo Anderson, professor at the university of the west indies who provided guidance in project management, software engineering, system design, and implementation strategy throughout the development process.
+            Together, the ClearLedger team believes technology should make financial management easier, more accessible, and more relevant to Caribbean users — not more complicated.
           </p>
           <p className="mx-auto mt-4 max-w-2xl text-white/52">
             ClearLedger is currently available for Android, with Windows support in development. We continuously update based on user feedback and emerging financial tracking needs.
