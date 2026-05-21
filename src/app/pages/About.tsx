@@ -93,8 +93,7 @@ export function About() {
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/64">
             ClearLedger was developed by a team of creative and technically driven students from The University of the West Indies (UWI) with a shared goal of solving one of the Caribbean’s most overlooked challenges namely personal financial management in a cash-first economy. 
-            Our team worked collaboratively to transform an academic project into a practical financial technology solution built specifically for Jamaica and the wider Caribbean, under the supervision of Dr. Ricardo Anderson.
-            The ClearLedger team believes new technologies should aim to make financial management easier, more accessible, and more relevant to Caribbean users.
+            Our team worked collaboratively to transform an academic project into a practical financial technology solution built specifically for Jamaica and the wider Caribbean, under the supervision of Dr. Ricardo Anderson. The ClearLedger team believes new technologies should aim to make financial management easier, more accessible, and more relevant to Caribbean users.
           </p>
           <p className="mx-auto mt-4 max-w-2xl text-white/52">
             ClearLedger is currently available for Android, with Windows support in development. We continuously update based on user feedback and emerging financial tracking needs.
